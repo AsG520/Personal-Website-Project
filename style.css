@@ -1,0 +1,232 @@
+:root {
+    --main-color: rgb(255, 255, 255); 
+    --background-color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--background-color);
+}
+
+.title {
+    margin-top: 5%;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    color: var(--main-color);
+    animation-name: appear-title;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+
+@keyframes appear-title {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.counter {
+    font-size: 15px;
+    color: var(--main-color);
+    margin-top: 20px;
+}
+
+.socials {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--main-color);
+}
+
+#recent-video-title {
+    animation-name: appear-recent-video-title;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+@keyframes appear-recent-video-title {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#youtube-link, #github-link, #linktree-link {
+    text-decoration-color: transparent;
+    padding: 10px;
+    color: var(--main-color);
+    transition: color 0.5s;
+    text-decoration: none;
+    font-size: 19px;
+    animation-name: appear-links;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+@keyframes appear-links {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#youtube-link:hover, #github-link:hover, #linktree-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+}
+
+#video-carousel {
+    display: flex;
+    overflow-x: auto;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#video {
+    border-radius: 16px;
+    flex: 0 0 calc((100vw * 0.5) * 9 / 16);
+    height: auto;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+    margin-right: 16px;
+    animation-name: videoAppear;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+@keyframes videoAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#view-more-videos {
+    margin: 150px;
+    color: black;
+    font-size: 20px;
+    animation-name: appear-view-more-videos;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+@keyframes appear-view-more-videos {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#more-video-link {
+    transition: text-decoration-color 0.3s;
+    text-decoration-color: transparent;
+    color: var(--main-color);
+    font-size: 20px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#upcoming-projects {
+    margin: 50px;
+    animation-name: appear-upcoming-projects;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes appear-upcoming-projects {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#description {
+    font-size: 23px;
+    animation-name: appear-description;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+#completed-projects {
+    animation-name: appear-completed-projects;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+}
+
+@keyframes appear-completed-projects {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear-description {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#upcoming-projects-heading {
+    text-decoration-line: underline;
+    text-decoration-color: var(--main-color);
+}
+
+#completed-projects-heading {
+    text-decoration-line: underline;
+    text-decoration-color: var(--main-color);
+}
+
+#view-more-videos:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+}
