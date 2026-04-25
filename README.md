@@ -30,3 +30,7 @@ How to Run
 3. Make sure the icon file is in the same directory with CSS and HTML file, or else the icon won't appear in the tab of website.
 4. Make sure to have a working extension that will launch a local development server with a live reload feature for both static and dynamic web pages (e.g., Live Server, etc).
 5. Run the program by using the following extension installed. 
+
+I will not plan to make a YouTube video that will showcase on how this project was made. This is because making this website required no advanced calculations or history that I can discuss or explain about. The knowledge of HTML and CSS were used to make this website only. As a result, this website is a reflection on the projects I complete over the months or years, demonstrating my dedication and hardwork. Overall, it will help keep track of my progress for what has been completed.
+
+Video Link of Personal Website Project in HTML & CSS (YouTube) - [N/A!].
